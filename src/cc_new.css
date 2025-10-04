@@ -88,3 +88,49 @@ body {
     transform 0.4s cubic-bezier(.02,.67,.57,1.53);
   /* ...other styles... */
 }
+
+@media (max-width: 900px) {
+  .footer-container h1 {
+    font-size: 2.6rem;
+    padding-left: 20px;
+  }
+  .cards-row {
+    gap: 28px;
+    padding: 40px 0;
+    flex-wrap: wrap;
+  }
+  .contact-card {
+    min-width: 220px;
+    padding: 32px 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-container h1 {
+    font-size: 1.7rem;
+    padding: 24px 0 0 8px;
+  }
+  .cards-row {
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    padding: 18px 0;
+  }
+  .contact-card {
+    min-width: 180px;
+    padding: 22px 8px;
+  }
+  .name {
+    font-size: 1.15rem;
+  }
+  .description {
+    font-size: 1rem;
+    margin-bottom: 16px;
+  }
+  .icon {
+    padding-bottom: 13px;
+  }
+  .card-link {
+    font-size: 0.96rem;
+  }
+}
